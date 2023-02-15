@@ -23,8 +23,12 @@ pow(){
 	echo "Power : $t ** $g = $((t**g))"
 }
 
+caca(){
+	problem
+}
+
 echo "Your choices :"
-echo -e "sum\nReal Division\nsub\npow\n"
+echo -e "sum\nReal Division\nsub\npow\ncaca\n"
 read -p "Enter your choice : " ch
 case $ch in 
 	1|"sum")read -p "Number a to add : " a ;
@@ -43,6 +47,11 @@ case $ch in
                 read -p "Number b to powered by : " b  ;
                 pow a b
         ;;
+	 5|"caca")read -p "Number a to be caca : " a ;
+                read -p "Number b to caca by : " b  ;
+                caca
+        ;;
+
 esac
 
 
